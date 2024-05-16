@@ -1,0 +1,39 @@
+:root {
+    /*Colores*/
+    --rosa-claro: #F7EBF0;
+    --rosa: #F3B4C3;
+    --fucsia: #EA4875;
+    --azul: #1955A3;
+    --gris: #747474;
+    /*Tamaño tipográfico*/
+    --small: 14px;
+    --medium: 16px;
+    --large: 24px;
+    --extra-large: 32px;
+    /*box-shadow*/
+}
+
+/*Parámetros generales*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*Nabvar*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--azul);
+    height: 10vh;
+}
+
+header picture img {
+    width: 150px;
+    height: auto;
+}
