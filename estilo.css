@@ -12,7 +12,6 @@
     --extra-large: 32px;
     /* box-shadow */
 }
-
 /* Parámetros generales */
 * {
     margin: 0;
@@ -20,11 +19,9 @@
     border: none;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Roboto", sans-serif;
 }
-
 /* Navbar */
 header {
     display: flex;
@@ -32,34 +29,34 @@ header {
     align-items: center;
     background-color: var(--azul);
     height: 8vh;
-    padding: 0 2rem;
+    width: 100vw;
+    padding: 0 3rem 0 3rem;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    position: fixed;
 }
-
 header picture img {
-    width: 150px;
+    width: 160px;
     height: auto;
 }
-
 picture{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 header nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
-
 .secciones {
     color: var(--rosa-claro);
-    font-size: var(--medium);
+    font-size: var(--small);
+    font-weight: 500;
     text-decoration: none;
 }
