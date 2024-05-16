@@ -1,19 +1,19 @@
 :root {
-    /*Colores*/
+    /* Colores */
     --rosa-claro: #F7EBF0;
     --rosa: #F3B4C3;
     --fucsia: #EA4875;
     --azul: #1955A3;
     --gris: #747474;
-    /*Tamaño tipográfico*/
+    /* Tamaño tipográfico */
     --small: 14px;
     --medium: 16px;
     --large: 24px;
     --extra-large: 32px;
-    /*box-shadow*/
+    /* box-shadow */
 }
 
-/*Parámetros generales*/
+/* Parámetros generales */
 * {
     margin: 0;
     padding: 0;
@@ -25,15 +25,41 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-/*Nabvar*/
+/* Navbar */
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--azul);
-    height: 10vh;
+    height: 8vh;
+    padding: 0 2rem;
 }
 
 header picture img {
     width: 150px;
     height: auto;
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.secciones {
+    color: var(--rosa-claro);
+    font-size: var(--medium);
+    text-decoration: none;
 }
