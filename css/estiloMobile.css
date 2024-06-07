@@ -1,0 +1,92 @@
+/*Tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Variables*/
+:root {
+	/* Colores */
+	--rosa-claro: #F7EBF0;
+	--rosa: #F3B4C3;
+	--fucsia: #EA4875;
+	--azul: #1955A3;
+	--gris: #747474;
+	/* Tamaño tipográfico */
+	--small: 14px;
+	--medium: 16px;
+	--large: 24px;
+	--extra-large: 42px;
+	/* box-shadow */
+	--bs-principal: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+/* Parámetros generales */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+@media (min-width:320px) {
+	body {
+		min-height: 100vh;
+		width: 100%;
+		margin: 0;
+	}
+
+	/* Navbar */
+	header {
+		display: flex;
+		justify-content: space-between;
+		background-color: var(--azul);
+		height: 8vh;
+		width: 100%;
+		box-shadow: var(--bs-principal);
+		position: fixed;
+        left: 0;
+        top: 0
+	}
+
+	#logo {
+		width: 150px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*Secciones*/
+	header nav {
+		display: none;
+	}
+
+	/*Carrito de compras / Secciones*/
+	form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	form button {
+		background-color: transparent;
+		padding: 0.5rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	}
+
+	.iconCompra {
+		color: var(--rosa-claro);
+		font-size: 1.5rem;
+	}
+
+	button p {
+		display: none;
+	}
+}
