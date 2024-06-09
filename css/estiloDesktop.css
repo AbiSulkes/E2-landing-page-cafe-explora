@@ -1,6 +1,6 @@
 @media(min-width:1200px) {
 	body {
-		background-color: var(--rosa);
+		background-color: var(--rosa-claro);
 	}
 
 	/* Navbar */
@@ -114,7 +114,7 @@
 		background-position: right center;
 		display: flex;
 		padding: 3rem;
-		height: 80vh; 
+		/* height: 80vh;  */
 		margin-top: 10vh;
 		box-sizing: border-box;
 		/* animation: animateBackground 5s linear infinite; */
@@ -183,7 +183,7 @@
 	}
 
 	.btn-productos {
-		display: inline-block;
+		/* display: inline-block; */
 		color: var(--rosa);
 		border-radius: 20px;
 		font-size: 18px;
@@ -213,18 +213,25 @@
 	/*Seccion intro CafeExplora*/
 	#introCafeexp {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: center;
 		margin-top: 5rem;
 	}
 
 	#introCafeexp h3 {
 		font-size: var(--large);
-		color: #1955a3;
+		color: var(--fucsia);
 		font-family: "League Spartan", sans-serif;
+		margin-bottom: 1rem;
+		font-size: var(--large);
 	}
 
-	#introCafeexp span {
-		font-style: italic;
-		font-weight: 900;
+	#introCafeexp p {
+		color: var(--gris);
+		width: 55%;
+		text-align: center;
+		font-size: var(--medium);
+		font-weight: 400;
 	}
 }
