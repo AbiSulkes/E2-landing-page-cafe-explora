@@ -1,4 +1,7 @@
 @media(min-width:1200px) {
+	body {
+		background-color: var(--rosa);
+	}
 
 	/* Navbar */
 	header {
@@ -10,6 +13,7 @@
 		width: 100vw;
 		padding: 0 3rem 0 3rem;
 		box-shadow: var(--bs-principal);
+		z-index: 1;
 	}
 
 	#logo {
@@ -20,7 +24,7 @@
 		align-items: center;
 	}
 
-	/*Secciones*/
+	/*Secciones NavBar*/
 	header nav {
 		flex: 1;
 		display: flex;
@@ -47,7 +51,7 @@
 		left: 0;
 		bottom: 0;
 		width: 0%;
-		height: 0.106rem;
+		height: 0.094rem;
 		background-color: var(--fucsia);
 		transform: translateX(100%);
 		transition: all 300ms 0ms ease-in-out;
@@ -100,14 +104,34 @@
 		display: none;
 	}
 
+	/*Seccion Portada*/
 	main {
 		width: 100%;
-		background: -webkit-linear-gradient(290deg, #f3b4c3,#1955a3);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(290deg, #f3b4c3,#1955a3);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+		background: url(https://abisulkes.alwaysdata.net/rrrainbow.svg), #1955a3;
+		background-blend-mode: color-dodge;
+		background-size: cover;
+		background-repeat: repeat;
+		background-position: right center;
 		display: flex;
-		position: fixed;
-		top: 10vh;
-		padding: 2rem;
-		height: 80vh;
+		padding: 3rem;
+		height: 80vh; 
+		margin-top: 10vh;
+		box-sizing: border-box;
+		/* animation: animateBackground 5s linear infinite; */
+	}
+
+	@keyframes animateBackground {
+		0% {
+			background-position: 0% 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 
 	main section,
@@ -120,6 +144,13 @@
 
 	main section {
 		flex-direction: column;
+		background: rgba(25, 85, 163, 0.82);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(25, 85, 163, 0.3);
+		margin-left: 2rem;
+
 	}
 
 	#titulo {
@@ -132,20 +163,24 @@
 		line-height: 1.2;
 	}
 
-	#titulo span{
+	#titulo span {
 		color: var(--rosa);
 		font-style: italic;
 		font-weight: 900;
 	}
-	
+
 	.bajada {
 		width: 500px;
 		font-size: 18px;
 		font-weight: 400;
 		color: var(--rosa-claro);
 		margin-bottom: 2rem;
+		line-height: 1.2;
 	}
 
+	.bajada span {
+		font-weight: bold;
+	}
 
 	.btn-productos {
 		display: inline-block;
@@ -159,19 +194,37 @@
 		width: 100%;
 	}
 
-	.btn-productos:hover{
+	.btn-productos:hover {
 		color: var(--fucsia);
 	}
 
 	.iconFlecha {
-		vertical-align: middle; 
+		vertical-align: middle;
 		margin-left: 10px;
-        font-size: 32px !important;
+		font-size: 32px !important;
 	}
 
 	.gifAnimado {
 		max-width: 450px;
 		box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 		border-radius: 20px;
+	}
+
+	/*Seccion intro CafeExplora*/
+	#introCafeexp {
+		display: flex;
+		justify-content: center;
+		margin-top: 5rem;
+	}
+
+	#introCafeexp h3 {
+		font-size: var(--large);
+		color: #1955a3;
+		font-family: "League Spartan", sans-serif;
+	}
+
+	#introCafeexp span {
+		font-style: italic;
+		font-weight: 900;
 	}
 }
