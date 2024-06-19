@@ -1,247 +1,184 @@
 @media(min-width:1200px) {
-	body {
-		background-color: var(--rosa-claro);
-	}
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
 
-	/* Navbar */
-	header {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: var(--azul);
-		height: 10vh;
-		width: 100vw;
-		padding: 0 3rem 0 3rem;
-		box-shadow: var(--bs-principal);
-		z-index: 1;
-	}
+    /********** Nabvar-barra de navegación **********/
 
-	#logo {
-		width: 170px;
-		height: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+    .header__logo {
+        flex-grow: 1;
+    }
 
-	/*Secciones NavBar*/
-	header nav {
-		flex: 1;
-		display: flex;
-		justify-content: flex-end;
-	}
+    .header__logo img {
+        width: 180px;
+        height: auto;
+    }
 
-	header nav ul {
-		list-style: none;
-		display: flex;
-		gap: 1rem;
-	}
+    header .header__nav {
+        display: flex;
+    }
 
-	.secciones {
-		color: var(--rosa-claro);
-		font-size: var(--small);
-		font-weight: 500;
-		text-decoration: none;
-		position: relative;
-	}
+    .nav__lista a {
+        color: var(--rosa-claro);
+        font-size: var(--small);
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+    }
 
-	.secciones::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 0%;
-		height: 0.094rem;
-		background-color: var(--fucsia);
-		transform: translateX(100%);
-		transition: all 300ms 0ms ease-in-out;
-	}
+    .nav__lista a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 0.094rem;
+        background-color: var(--fucsia);
+        transform: translateX(100%);
+        transition: all 300ms 0ms ease-in-out;
+    }
 
-	.secciones:hover::after {
-		width: 100%;
-		transform: translateX(0%);
-	}
+    .nav__lista a:hover::after {
+        width: 100%;
+        transform: translateX(0%);
+    }
 
-	/*Carrito de compras*/
-	form button {
-		padding: 0.5rem 1rem;
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px outset;
-	}
+    .nav__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
 
-	#btn-compra {
-		background-color: var(--fucsia);
-		padding: 8px 14px;
-		border-radius: 20px;
-		margin-left: 2rem;
-	}
+    /********** Nabvar - Carrito de compras **********/
 
-	#btn-compra:hover {
-		background-color: var(--rosa-claro);
-		color: var(--rosa);
-	}
+    .btn__icono1 {
+        background-color: var(--fucsia);
+        font-size: var(--large);
+        color: var(--rosa-claro);
+    }
 
-	#btn-compra p:hover {
-		color: var(--rosa);
-	}
+    .btn--compra {
+        display: flex;
+        align-items: center;
+        background-color: var(--fucsia);
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin: 2rem;
+        cursor: pointer;
+    }
 
-	.iconCompra {
-		color: var(--rosa);
-		font-size: 1.5rem;
-	}
+    .btn--compra:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 
-	button p {
-		display: block;
-		color: var(--rosa-claro);
-		font-size: var(--small);
-		font-weight: 600;
-	}
+    header .btn__texto {
+        display: flex;
+        color: var(--rosa-claro);
+        font-size: var(--small);
+        font-weight: 600;
+    }
 
-	button .iconCompra:last-child {
-		display: none;
-	}
+    .btn--menu {
+        display: none;
+    }
 
-	/*Seccion Portada*/
-	main {
-		width: 100%;
-		background: url(https://abisulkes.alwaysdata.net/rrrainbow.svg), #1955a3;
-		background-blend-mode: color-dodge;
-		background-size: cover;
-		background-repeat: repeat;
-		background-position: right center;
-		display: flex;
-		padding: 3rem;
-		/* height:80vh;*/
-		margin-top: 10vh;
-		box-sizing: border-box;
-	}
+    /********** Hero-Portada principal **********/
+    main {
+        display: flex;
+        flex-direction: row !important;
+        background: url(https://abisulkes.alwaysdata.net/rrrainbow.svg), #1955a3;
+        background-blend-mode: color-dodge;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: right center;
+        box-sizing: border-box;
+    }
 
-	main section,
-	main picture {
-		flex: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+    .main__imagen,
+    .main__section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-	main section {
-		flex-direction: column;
-		background: rgba(25, 85, 163, 0.82);
-		border-radius: 16px;
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(5px);
-		border: 1px solid rgba(25, 85, 163, 0.3);
-		margin-left: 2rem;
-		animation: fade-in-left .6s cubic-bezier(.39, .575, .565, 1.000) both
-	}
-}
+    }
 
-@keyframes fade-in-left {
-	0% {
-		transform: translateX(-50px);
-		opacity: 0
-	}
+    .main__section {
+        flex-direction: column;
+        background: rgba(25, 85, 163, 0.82);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(25, 85, 163, 0.3);
+        animation: fade-in-right .6s cubic-bezier(.39, .575, .565, 1.000) both
+    }
 
-	100% {
-		transform: translateX(0);
-		opacity: 1
-	}
-}
+    @keyframes fade-in-right {
+        0% {
+            transform: translateX(50px);
+            opacity: 0
+        }
 
-#titulo {
-	font-family: "League Spartan", sans-serif;
-	width: 501px;
-	font-size: var(--extra-large);
-	font-weight: 600;
-	color: var(--rosa-claro);
-	margin-bottom: 1rem;
-	line-height: 1.2;
-}
+        100% {
+            transform: translateX(0);
+            opacity: 1
+        }
+    }
 
-#titulo span {
-	color: var(--rosa);
-	font-style: italic;
-	font-weight: 900;
-}
+    .imagen__animado-gif {
+        width: 60%;
+        height: auto;
+        padding: 2rem;
+        animation: fade-in-left .6s cubic-bezier(.39, .575, .565, 1.000) both
+    }
 
-.bajada {
-	width: 500px;
-	font-size: 18px;
-	font-weight: 400;
-	color: var(--rosa-claro);
-	margin-bottom: 2rem;
-	line-height: 1.2;
-}
+    @keyframes fade-in-left {
+        0% {
+            transform: translateX(-50px);
+            opacity: 0
+        }
 
-.bajada span {
-	font-weight: bold;
-}
+        100% {
+            transform: translateX(0);
+            opacity: 1
+        }
+    }
 
-.btn-productos {
-	/* display:inline-block;*/
-	color: var(--rosa);
-	border-radius: 20px;
-	font-size: 18px;
-	font-weight: 600;
-	text-align: start;
-	display: block;
-	max-width: 500px;
-	width: 100%;
-}
 
-.btn-productos:hover {
-	color: var(--fucsia);
-}
+    .section__titulo {
+        font-size: 55px;
+        text-align: left;
+        width: 501px;
+        line-height: 1;
+        margin-bottom: 1.5rem;
+    }
 
-.iconFlecha {
-	vertical-align: middle;
-	margin-left: 10px;
-	font-size: 32px !important;
-}
+    .section__descripcion {
+        font-size: var(--medium-big);
+        text-align: left;
+        width: 501px;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
 
-.gifAnimado {
-	max-width: 450px;
-	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-	border-radius: 20px;
-	animation: fade-in-right .6s cubic-bezier(.39, .575, .565, 1.000) both
-}
+    .btn--productos {
+        background-color: transparent;
+        box-shadow: none;
+        width: 501px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        font-size: var(--medium-big);
+        font-weight: 600;
+    }
 
-@keyframes fade-in-right {
-	0% {
-		transform: translateX(50px);
-		opacity: 0
-	}
+    .btn--productos:hover {
+        color: var(--fucsia);
+    }
 
-	100% {
-		transform: translateX(0);
-		opacity: 1
-	}
-}
+    /********** About-Sobre CafeExplora **********/
+    .intro .intro__texto {
+        width: 850px;
+    }
 
-/*Seccion intro CafeExplora*/
-#introCafeexp {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 5rem;
-}
-
-#introCafeexp h3 {
-	font-size: var(--large);
-	color: var(--fucsia);
-	font-family: "League Spartan", sans-serif;
-	margin-bottom: 1rem;
-	font-size: var(--large);
-}
-
-#introCafeexp p {
-	color: var(--gris);
-	width: 55%;
-	text-align: center;
-	font-size: var(--medium);
-	font-weight: 400;
 }

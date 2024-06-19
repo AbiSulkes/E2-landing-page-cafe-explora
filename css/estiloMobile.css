@@ -12,6 +12,7 @@
 	/* Tamaño tipográfico */
 	--small: 14px;
 	--medium: 16px;
+	--medium-big: 18px;
 	--large: 24px;
 	--extra-large: 42px;
 	/* box-shadow */
@@ -24,69 +25,150 @@
 	padding: 0;
 	border: none;
 	text-decoration: none;
+	list-style: none;
 	box-sizing: border-box;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 @media (min-width:320px) {
-	body {
-		min-height: 100vh;
-		width: 100%;
-		margin: 0;
-	}
 
-	/* Navbar */
+	/********** Nabvar-barra de navegación **********/
 	header {
+		background-color: var(--azul);
+		width: 100%;
+		height: 8vh;
 		display: flex;
 		justify-content: space-between;
-		background-color: var(--azul);
-		height: 8vh;
-		width: 100%;
+		align-items: center;
+		overflow: hidden;
 		box-shadow: var(--bs-principal);
-		position: fixed;
-        left: 0;
-        top: 0
 	}
 
-	#logo {
-		width: 150px;
+	header .header__logo {
+		width: 180px;
 		height: auto;
 		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
-	/*Secciones*/
-	header nav {
+	header .header__nav {
 		display: none;
 	}
 
-	/*Carrito de compras / Secciones*/
-	form {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	/********** Nabvar - Carrito de compras **********/
+	.btn--compra,
+	.btn--menu {
+		background: none;
+		gap: 0.5rem;
+		padding: 0.2rem;
 	}
 
-	form button {
-		background-color: transparent;
-		padding: 0.5rem;
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 5px;
-	}
-
-	.iconCompra {
+	.header__form .btn__icono {
 		color: var(--rosa-claro);
-		font-size: 1.5rem;
 	}
 
-	button p {
+	.btn__icono1 {
+		color: var(--rosa-claro);
+	}
+
+	header .btn__texto {
 		display: none;
+	}
+
+	/********** Hero-Portada principal **********/
+	.main {
+		background-color: var(--azul);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main__imagen .imagen__animado-gif {
+		max-width: 100%;
+		height: auto;
+		border-radius: 50%;
+		padding: 1rem;
+		animation: shadow-drop-2-center .4s ease-in-out both;
+	}
+
+
+	@keyframes shadow-drop-2-center {
+		0% {
+			transform: translateZ(0);
+		}
+
+		100% {
+			transform: translateZ(50px);
+		}
+	}
+
+	.main__section {
+		padding:1rem 1rem 2rem 1rem;;
+		text-align: center;
+		box-shadow: var(--bs-principal);
+	}
+
+	.section__titulo {
+		font-family: "League Spartan", sans-serif;
+		font-size: 28px;
+		color: var(--rosa-claro);
+		margin-bottom: 1rem;
+	}
+
+	.titulo__destacado {
+		color: var(--rosa);
+		font-style: italic;
+		font-weight: 900;
+	}
+
+	.section__descripcion {
+		color: var(--rosa-claro);
+		margin-bottom: 1rem;
+		font-size: var(--medium);
+	}
+
+	.descripcion__destacado {
+		font-weight: bold;
+	}
+
+	.btn--productos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+		color: var(--rosa-claro);
+		background-color: var(--fucsia);
+		border-radius: 20px;
+		padding: 0.5rem;
+		width: 200px;
+		margin: 0 auto;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+
+	/********** About-Sobre CafeExplora **********/
+	.intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--rosa-claro);
+		padding: 2rem;
+	}
+
+	.intro .intro__titulo {
+		font-family: "League Spartan", sans-serif;
+		font-size: var(--large);
+		color: var(--fucsia);
+		margin-bottom: 1rem;
+	}
+
+	.intro .intro__texto {
+		color: var(--gris);
+		font-size: var(--medium);
+		text-align: center;
 	}
 }
