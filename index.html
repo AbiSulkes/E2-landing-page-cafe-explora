@@ -16,19 +16,20 @@
 </head>
 
 <body>
+	<!--Seccion navegacion-->
 	<header class="header">
 		<picture class="header__logo">
 			<img src="https://abisulkes.alwaysdata.net/logoCafeExplora.svg" alt="Logo CafeExplora">
 		</picture>
 		<nav class="header__nav">
 			<ul class="nav__lista">
-				<li class="nav__item"><a  href="#">Productos</a></li>
-				<li class="nav__item"><a  href="#">Servicios</a></li>
-				<li class="nav__item"><a  href="#">Contactanos</a></li>
+				<li class="nav__item"><a href="#">Productos</a></li>
+				<li class="nav__item"><a href="#">Servicios</a></li>
+				<li class="nav__item"><a href="#">Contactanos</a></li>
 			</ul>
 		</nav>
 		<form class="header__form" action="">
-			<button type="button" class= "btn--compra">
+			<button type="button" class="btn--compra">
 				<span class="material-symbols-outlined btn__icono1">
 					shopping_bag
 				</span>
@@ -43,7 +44,7 @@
 		</form>
 	</header>
 
-
+	<!--Seccion Portada principal-->
 	<main class="main">
 		<picture class="main__imagen">
 			<img class="imagen__animado-gif" src="https://abisulkes.alwaysdata.net/gifPortada.gif"
@@ -65,7 +66,7 @@
 		</section>
 	</main>
 
-
+	<!--Seccion introducion-->
 	<section class="intro">
 		<h3 class="intro__titulo">Hecho con 💗</h3>
 		<p class="intro__texto">En <b>CaféExplora</b>,creemos que disfrutar de un buen café debe ser una experiencia
@@ -73,6 +74,96 @@
 			demoras ni complicaciones, para que puedas saborear cada taza como si estuviera recién hecha en casa.</p>
 	</section>
 
-</body>
+	<!--Seccion beneficios-->
+	<div class="contenedorCard">
+		<article class="card">
+			<picture>
+				<img class="card__img" src="https://abisulkes.alwaysdata.net/Onboarding1.png" alt="Imagen de ejemplo">
+			</picture>
+			<div>
+				<h2 class="card__titulo">Entrega Rápida</h2>
+			</div>
+			<section>
+				<p class="card__bajada">Con CaféExplora, recibís tu café sin demoras. Nuestro sistema de entrega
+					eficiente
+					asegura que el café llegue fresco y listo para disfrutar, sin complicaciones.</p>
+			</section>
+		</article>
+		<article class="card">
+			<picture>
+				<img class="card__img" src="https://abisulkes.alwaysdata.net/Onboarding2.png" alt="Imagen de ejemplo">
+			</picture>
+			<div>
+				<h2 class="card__titulo">Calidad Inigualable</h2>
+			</div>
+			<section>
+				<p class="card__bajada">Disfrutá del mejor café, cuidadosamente seleccionado y tostado para garantizar
+					una
+					experiencia de sabor única en cada taza. Nuestro compromiso con la calidad asegura que cada sorbo
+					sea
+					perfecto.
 
+				</p>
+			</section>
+		</article>
+		<article class="card">
+			<picture>
+				<img class="card__img" src="https://abisulkes.alwaysdata.net/Onboarding3.png" alt="Imagen de ejemplo">
+			</picture>
+			<div>
+				<h2 class="card__titulo">Facilidad en el Pago</h2>
+			</div>
+			<section>
+				<p class="card__bajada">Realizá tus compras de manera rápida y segura. CaféExplora ofrece múltiples
+					opciones
+					de pago, todas protegidas con la última tecnología en seguridad para que tu experiencia de compra
+					sea
+					cómoda y confiable.</p>
+			</section>
+		</article>
+	</div>
+
+	<!--Seccion contacto-->
+	<article class="form">
+
+		<section class="form__contacto">
+			<h2 class="form__titulo">Contactate con nosotros</h2>
+			<h4>Ciudad Autónoma de Buenos Aires</h4>
+			<p>Dirección: Avenida Cabildo 2010</p>
+			<p>Teléfono: 11 3456 2789</p>
+			<p>Correo: <a class="form__correo" href="cafeExplora@contacto.com">cafeExplora@contacto.com</a></p>
+			<div class="form__icon--contenedor">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="#ea4875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="lucide lucide-facebook form__icon">
+					<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+				</svg>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="#ea4875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="lucide lucide-instagram form__icon">
+					<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+					<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+					<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+				</svg>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="#ea4875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="lucide lucide-linkedin form__icon">
+					<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+					<rect width="4" height="12" x="2" y="9" />
+					<circle cx="4" cy="4" r="2" />
+				</svg>
+			</div>
+		</section>
+
+		<picture class="form__img--contenedor">
+			<img class="form__img" src="https://abisulkes.alwaysdata.net/foto1.png" alt="Descripción de la imagen">
+		</picture>
+	</article>
+
+	<footer class="footer">
+		<picture class="footer__logo">
+			<img src="https://abisulkes.alwaysdata.net/logoCafeExplora.svg" alt="Logo CafeExplora">
+		</picture>
+	</footer>
+</body>
 </html>

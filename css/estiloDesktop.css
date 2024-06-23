@@ -144,7 +144,6 @@
         }
     }
 
-
     .section__titulo {
         font-size: 55px;
         text-align: left;
@@ -179,6 +178,79 @@
     /********** About-Sobre CafeExplora **********/
     .intro .intro__texto {
         width: 850px;
+    }
+
+    /********** Beneficios-Card **********/
+    .contenedorCard {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+        padding: 0px 3rem;
+    }
+
+    .card {
+        width: 370px;
+    }
+
+    /********** Contacto **********/
+    .form {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-top: 2rem;
+        background-color: var(--azul);
+    }
+
+    .form__img--contenedor {
+        flex: 1.5;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: var(--azul); */
+    }
+
+    .form__contacto {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(85px);
+        margin: 2rem;
+        padding: 1rem;
+        background: rgba(25, 85, 163, 0.82);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(12, 64, 132, 0.3);
+  
+    }
+    .form__contacto p {
+        margin-bottom: 0.5rem;
+    }
+    .form__contacto h4 {
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    .form__titulo{
+        font-size: 28px;
+        margin-bottom: 2rem;
+		text-align: left;
+        border-bottom: 2px solid var(--fucsia);
+    }
+
+    .form__img {
+        display: flex;
+        max-width: 50%;
+        transform: translateX(68px);
+    }
+
+    .form__icon--contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        margin-top:2rem;
     }
 
 }
