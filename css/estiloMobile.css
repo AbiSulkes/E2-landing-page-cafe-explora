@@ -87,15 +87,6 @@ body {
 		flex-direction: column;
 	}
 
-	/* .main__imagen{
-		background: url(https://abisulkes.alwaysdata.net/rrrainbow.svg);
-		background-blend-mode: color-dodge;
-		background-size: cover;
-		background-repeat: repeat;
-		background-position: right center;
-		box-sizing: border-box;
-	} */
-
 	.main__imagen .imagen__animado-gif {
 		max-width: 100%;
 		height: auto;
